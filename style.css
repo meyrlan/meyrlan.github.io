@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.half-of-page{
+  width: 40vw;
+  height: 100vh;
+  background: #c7c7c7;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -2;
+}
+
+.my-box{
+  text-align: center;
+  align-items: center;
+  background: #e9e9e9;
+  width: 400px;
+  height: 550px;
+  margin: 20vh 0 0 25vw;
+  font-family: Roboto;
+  box-shadow: -3px -3px 10px black;
+}
+
+.my-image{
+  width: 200px;
+  margin-top: 70px;
+}
+
+.my-image:hover{
+  animation: shake_picture 1s 1;
+}
+
+@keyframes shake_picture{
+  0%{
+    transform: rotateZ(0deg);
+  }
+  33.33%{
+    transform: rotateZ(4deg);
+  }
+  66.66%{
+    transform: rotateZ(-4deg);
+  }
+  100%{
+    transform: rotateZ(0deg);
+  }
+}
+
+.my-name-surname{
+  margin-top: 20px;
+}
+
+hr{
+  width: 50px;
+  margin: 20px auto 30px auto;
+}
+
+.college{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+.container{
+  background: white;
+  height: 55px;
+  width: 100%;
+  margin-top: 13%;
+}
+
+.contacts{
+  display: flex;
+  margin-top: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.contact{
+  width: 35px;
+  height: 35px;
+}
+
+.contact, li{
+  margin: auto;
+}
+
+li:hover{
+  animation: show_icon 0.5s 1;
+}
+
+@keyframes show_icon{
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(5px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+.text-part{
+  position: absolute;
+  right: 19vw;
+  top: 24vh;
+  background: white;
+  width: 30vw;
+  height: 70vh;
+  z-index: -1;
+  font-family: Roboto;
+}
+
+.info-hello{
+  font-size: 80px;
+}
+
+footer{
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  background: white;
+  width: 100vw;
+  height: 80px;
+  border-top: 2px solid #e9e9e9;
+  font-family: Roboto;
+}
+
+.copyright{
+  font-size: 16px;
+  margin: 35px 0px 0px 70px;
+}
+
+.my-contacts{
+  position: absolute;
+  bottom: 13px;
+  right: 0;
+  font-size: 16px;
+  border-spacing: 100px 5px;
+  border-collapse: separate;
+}
+
+.my-contacts th img:hover{
+  animation: move_icon 0.5s 1;
+}
+
+@keyframes move_icon{
+  0%{
+    transform: scale(1, 1);
+  }
+  50%{
+    transform: scale(1.1, 1.1);
+  }
+  100%{
+    transform: scale(1, 1);
+  }
+}
+
+.my-contacts img{
+  width: 25px;
+}
+.my-contacts tr td a{
+  text-decoration: none;
+  color: black;
+}
+
+th{
+  border-spacing: 20px 0;
+}
+
+@media screen and (min-width: 2600px){
+  .my-box{
+    margin: 25vh 0 0 23vw;
+  }
+  .half-of-page{
+    width: 29vw;
+  }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 2600px){
+  .my-box{
+    margin: 25vh 0 0 20vw;
+  }
+  .text-part{
+    right: 22vw;
+    top: 28vh;
+  }
+  .half-of-page{
+    width: 28vw;
+  }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1600px){
+  .text-part{
+    right: 12vw;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1400px){
+  .half-of-page{
+    width: 27vw;
+  }
+  .my-box{
+    margin: 25vh 0 0 11vw;
+  }
+  .text-part{
+    width: 35vw;
+    right: 13vw;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1024px){
+  .half-of-page{
+    height: 30vh;
+    width: 100vw;
+  }
+  .my-box{
+    margin: 6vh auto 0 auto;
+  }
+  .info-header h1{
+    font-size: 50px;
+  }
+  .info-header h2{
+    font-size: 20px;
+  }
+  .info-header{
+    margin-left: 10px;
+  }
+  .text-part{
+    width: 90vw;
+    height: 50vh;
+    position: absolute;
+    top: 63vh;
+    left: 20px;
+  }
+  .paragraph{
+    font-size: 15px;
+  }
+  .line-border{
+    display: none;
+  }
+  .paragraph{
+    text-indent: 20px;
+  }
+  .my-contacts{
+    border-spacing: 20px 5px;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 730px){
+
+  .my-image{
+    width: 120px;
+    margin-top: 35px;
+  }
+
+  .my-box{
+    width: 250px;
+    height: 340px;
+  }
+
+  .my-name-surname{
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .college{
+    font-size: 15px;
+  }
+
+  hr{
+    width: 30px;
+    margin: 10px auto 20px auto;
+  }
+
+  .container{
+    height: 42px;
+    width: 100%;
+  }
+
+  .contact{
+    width: 23px;
+    height: 23px;
+  }
+
+  .half-of-page{
+    height: 25vh;
+  }
+
+  .text-part{
+    margin-top: 30px;
+    top: 50vh;
+    left: 20px;
+  }
+
+  .paragraph{
+    font-size: 14px;
+  }
+
+  .line-border{
+    display: none;
+  }
+  .mobile-version-none{
+    display: none;
+  }
+
+  .info-header{
+    margin-top: 5vw;
+  }
+
+  footer{
+    height: 50px;
+  }
+
+  .copyright{
+    font-size: 12px;
+    margin: 20px 0 0 40px;
+  }
+
+  .my-contacts{
+    bottom: 0px;
+    font-size: 9px;
+    border-spacing: 10px 5px;
+    border-collapse: separate;
+  }
+
+  .my-contacts img{
+    width: 20px;
+    margin: 0 20px 2px 0;
+  }
+
+  .my-contacts td{
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 400px){
+  .my-image{
+    width: 120px;
+    margin-top: 35px;
+  }
+
+  .my-box{
+    width: 250px;
+    height: 340px;
+    margin: 2vh auto 0 auto;
+  }
+
+  .my-name-surname{
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .college{
+    font-size: 15px;
+  }
+
+  hr{
+    width: 30px;
+    margin: 10px auto 20px auto;
+  }
+
+  .container{
+    height: 42px;
+    width: 100%;
+  }
+
+  .contact{
+    width: 23px;
+    height: 23px;
+  }
+
+  .half-of-page{
+    height: 25vh;
+  }
+
+  .text-part{
+    margin-top: 30px;
+    top: 50vh;
+    left: 20px;
+  }
+
+  .paragraph{
+    font-size: 12px;
+  }
+
+  .line-border{
+    display: none;
+  }
+  .mobile-version-none{
+    display: none;
+  }
+
+  .info-header{
+    margin-top: 10vw;
+  }
+
+  .info-header h1{
+    font-size: 30px;
+  }
+
+  .info-header h2{
+    font-size: 13px;
+    margin-bottom: 17px;
+    margin-top: 5px;
+  }
+
+  footer{
+    height: 50px;
+  }
+
+  .copyright{
+    font-size: 12px;
+    margin: 20px 0 0 40px;
+  }
+
+  .my-contacts{
+    bottom: 0px;
+    font-size: 9px;
+    border-spacing: 10px 5px;
+    border-collapse: separate;
+  }
+
+  .my-contacts img{
+    width: 20px;
+    margin: 0 20px 2px 0;
+  }
+
+  .my-contacts td{
+    display: none;
+  }
+}
